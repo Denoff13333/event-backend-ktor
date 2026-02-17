@@ -1,0 +1,19 @@
+ktor:
+  deployment:
+    port: 0
+  application:
+    modules:
+      - com.example.ApplicationKt.module
+
+db:
+  driver: "org.h2.Driver"
+  jdbcUrl: "jdbc:h2:mem:test;DB_CLOSE_DELAY=-1;MODE=PostgreSQL"
+  user: "sa"
+  password: ""
+
+jwt:
+  issuer: "events-api"
+  audience: "events-api-users"
+  realm: "events"
+  secret: "TEST_SECRET"
+  expiresMs: 3600000

@@ -1,0 +1,19 @@
+ktor:
+  deployment:
+    port: 8080
+  application:
+    modules:
+      - com.example.ApplicationKt.module
+
+db:
+  driver: "org.h2.Driver"
+  jdbcUrl: "jdbc:h2:file:./data/events;DB_CLOSE_DELAY=-1;MODE=PostgreSQL"
+  user: "sa"
+  password: ""
+
+jwt:
+  issuer: "events-api"
+  audience: "events-api-users"
+  realm: "events"
+  secret: "CHANGE_ME_SUPER_SECRET"
+  expiresMs: 3600000
