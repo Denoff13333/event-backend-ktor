@@ -12,10 +12,6 @@ gradle run
 
 Сервер стартует на `http://localhost:8080`.
 
-## Запуск тестов (используется H2 in-memory)
-```bash
-gradle test
-```
 
 ## Примеры запросов
 
