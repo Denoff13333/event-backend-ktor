@@ -1,15 +1,8 @@
 # Event Backend (Ktor + Kotlin + Exposed + Koin + JWT)
 
-## Требования
 - JDK 17+
-- Gradle (или IntelliJ IDEA, которая сама подтянет Gradle)
-- Docker (опционально, для PostgreSQL)
-
-## Запуск с PostgreSQL (рекомендуется)
-1) Поднять БД:
-```bash
-docker compose up -d
-```
+- Gradle
+- Docker 
 
 2) (Опционально) поменять `jwt.secret` в `src/main/resources/application.yaml`.
 
