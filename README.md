@@ -4,9 +4,8 @@
 - Gradle
 - Docker 
 
-2) (Опционально) поменять `jwt.secret` в `src/main/resources/application.yaml`.
-
-3) Запустить сервер:
+## Запуск сервера
+Запустить сервер:
 ```bash
 gradle run
 ```
