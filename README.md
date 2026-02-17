@@ -62,3 +62,11 @@ curl -X DELETE http://localhost:8080/events/$EVENT_ID \
 
 ## Кастомный плагин
 Каждый ответ содержит header `X-Response-Time-Ms`.
+
+
+
+## Результаты 
+<img width="1280" height="473" alt="image" src="https://github.com/user-attachments/assets/d9a2014d-3149-4a7d-be89-7fd46e206f79" />
+<img width="946" height="301" alt="image" src="https://github.com/user-attachments/assets/6a37fb0a-47c0-42e6-87ec-088f2a428b96" />
+
+
