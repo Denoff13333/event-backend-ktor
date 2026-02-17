@@ -19,7 +19,7 @@ val koinVersion = "3.5.6"
 val logbackVersion = "1.5.6"
 
 dependencies {
-    // Ktor server
+    
     implementation("io.ktor:ktor-server-core-jvm:$ktorVersion")
     implementation("io.ktor:ktor-server-netty-jvm:$ktorVersion")
     implementation("io.ktor:ktor-server-content-negotiation-jvm:$ktorVersion")
@@ -28,28 +28,28 @@ dependencies {
     implementation("io.ktor:ktor-server-status-pages-jvm:$ktorVersion")
     implementation("com.h2database:h2:2.2.224")
 
-    // Auth JWT
+    
     implementation("io.ktor:ktor-server-auth-jvm:$ktorVersion")
     implementation("io.ktor:ktor-server-auth-jwt-jvm:$ktorVersion")
 
-    // Koin DI
+    
     implementation("io.insert-koin:koin-ktor:$koinVersion")
     implementation("io.insert-koin:koin-logger-slf4j:$koinVersion")
 
-    // Exposed + Hikari + DB drivers
+    
     implementation("org.jetbrains.exposed:exposed-core:$exposedVersion")
     implementation("org.jetbrains.exposed:exposed-jdbc:$exposedVersion")
     implementation("com.zaxxer:HikariCP:5.1.0")
     implementation("org.postgresql:postgresql:42.7.4")
     testImplementation("com.h2database:h2:2.2.224")
 
-    // Password hashing
+    
     implementation("org.mindrot:jbcrypt:0.4")
 
-    // Logging
+    
     runtimeOnly("ch.qos.logback:logback-classic:$logbackVersion")
 
-    // Tests
+    
     testImplementation("io.ktor:ktor-server-test-host-jvm:$ktorVersion")
     testImplementation(kotlin("test"))
 }
